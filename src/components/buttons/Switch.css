@@ -1,0 +1,42 @@
+:root{
+    --switch:56px;    
+}
+
+.switch-container {
+  background-color: #151515;
+  border-radius: 50px;
+  height: 29px;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  position: relative;
+  transition: 0.3s all ease-in-out;
+  width: var(--switch);
+}
+.rectangle {
+  background-color: #ffe8e838;
+  border-radius: 10px;
+  height: 35%;
+  transition: 0.3s all ease-in-out;
+  left: 15%;
+  top: 30%;
+  width: 70%;
+}
+.ellipse {
+  height: 100%;
+  width: 52%;
+  background-color: white;
+  border-radius: 50%;
+  left: 0;
+  position: absolute;
+  border: 2px solid #151515;
+  z-index: 4;
+  transition: 0.3s all ease-in-out;
+  display: grid;
+  color: #a1a1a1;
+  place-items: center;
+}
+.ellipse-i {
+  left: calc(var(--switch) - 52%);
+  color: black;
+}

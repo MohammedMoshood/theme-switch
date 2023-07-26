@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+:root {
+  --clr-bcg: #fff;
+  --clr-font: #282c35;
+  --clr-primary: #151515;
+}
+
+.dark-theme {
+  --clr-bcg: #282c35;
+  --clr-font: #fff;
+  --clr-primary: #fff;
+}
+.light-theme {
+  --clr-bcg: #fff;
+  --clr-font: #151515;
+  --clr-primary: #151515;
+}
+body {
+  background: var(--clr-bcg);
+  color: var(--clr-font);
+  font-family: "Mulish", sans-serif;
+  transition: all 0.3s linear;
+}
